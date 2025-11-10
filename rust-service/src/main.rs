@@ -68,7 +68,7 @@ async fn main() -> std::io::Result<()> {
             .service(hello)
             .service(fibonacci_handler)
     })
-    .bind("127.0.0.1:8080")?
+    .bind("127.0.0.1:8083")?
     .workers(4)
     .run()
     .await
