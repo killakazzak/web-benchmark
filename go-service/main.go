@@ -96,7 +96,7 @@ func main() {
 	http.HandleFunc("/health", healthHandler)
 	http.HandleFunc("/fibonacci/", fibonacciHandler)
 
-	port := ":8080"
+	port := ":8081"
 	fmt.Printf("🚀 Starting Go Fibonacci server on http://127.0.0.1%s\n", port)
 	fmt.Printf("📊 Test endpoint: http://127.0.0.1%s/fibonacci/10\n", port)
 
